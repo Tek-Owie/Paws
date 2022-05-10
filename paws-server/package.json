@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@ngneat/falso": "^5.2.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.3.1"
+  }
+}
