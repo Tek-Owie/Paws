@@ -6,3 +6,66 @@ html {
   box-sizing: inherit;
 }
 
+.footer-div {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(147, 26, 26);
+  padding-bottom: 1rem;
+}
+
+.brand {
+  display: flex;
+  margin: 0 auto auto 2rem;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.brand > h3 {
+  color: white;
+}
+
+.contact {
+  list-style: none;
+  display: flex;
+  margin: auto;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.contact > li > a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: mistyrose;
+}
+
+.subscribe {
+  display: flex;
+  margin: 0 auto auto;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.subscribe > h3 {
+  text-transform: capitalize;
+}
+
+.explore {
+  list-style: none;
+  display: flex;
+  margin: 1rem 1rem auto;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+
+.explore > h3 {
+  text-transform: uppercase;
+}
+
+.explore > a {
+  text-decoration: none;
+  color: mistyrose;
+}
