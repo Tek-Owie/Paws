@@ -2,23 +2,27 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import "./Header.css";
 
-function NavBar ()
+export default function NavBar ()
 {
     return (
         <nav className="navbar">
             <div className="brand-name">
                 Paws
             </div>
-            <ul>
+            <ul className="nav-links">
+                <li>         
+                    <NavLink to="/">Home</NavLink>
+                </li>
                 <li>
-                    <NavLink to="#">Home</NavLink>
-                    <NavLink to="#">About</NavLink>
-                    <NavLink to="#">Catalogue</NavLink>
-                    <NavLink to="#">Contact</NavLink>
+                    <NavLink to="/about">About</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/catalogue">Catalogue</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/contact">Contact</NavLink>
                 </li>
             </ul>
         </nav>
     )
 }
-
-export default NavBar;

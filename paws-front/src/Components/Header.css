@@ -1,24 +1,38 @@
 .navbar {
     display: flex;
-    margin: 0;
-    padding: 0;
+    padding: 0 1rem;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .brand-name {
     text-transform: uppercase;
-    font-size: larger;
+    font-size: 3rem;
+    letter-spacing: 2px;
 }
 
-.nav ul {
+.nav-links {
     display: flex;
+    margin: 0;
+    padding: 0;
     gap: 2rem;
 }
 
-li {
+.nav-links li {
     list-style: none;
 }
 
-li a {
+.nav-links a {
+    display: flex;
+    height: 100%;
+    align-items: center;
     text-decoration: none;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid hsl(180, 75%, 58%);
+}
+
+.nav-links li:hover {
+    background: green;
 }
