@@ -1,71 +1,40 @@
-html {
-  box-sizing: border-box;
+.App {
+  text-align: center;
+  margin: 0 12rem;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.footer-div {
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
   display: flex;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgb(147, 26, 26);
-  padding-bottom: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
 
-.brand {
-  display: flex;
-  margin: 0 auto auto 2rem;
-  flex-flow: column wrap;
-  align-content: flex-start;
+.App-link {
+  color: rgb(112, 76, 182);
 }
 
-.brand > h3 {
-  color: white;
-}
-
-.contact {
-  list-style: none;
-  display: flex;
-  margin: auto;
-  flex-flow: column wrap;
-  align-content: flex-start;
-}
-
-.contact > li > a {
-  text-transform: capitalize;
-  text-decoration: none;
-  color: mistyrose;
-}
-
-.subscribe {
-  display: flex;
-  margin: 0 auto auto;
-  flex-flow: column wrap;
-  align-content: flex-start;
-}
-
-.subscribe > h3 {
-  text-transform: capitalize;
-}
-
-.explore {
-  list-style: none;
-  display: flex;
-  margin: 1rem 1rem auto;
-  flex-flow: column wrap;
-  align-content: flex-start;
-}
-
-.explore > h3 {
-  text-transform: uppercase;
-}
-
-.explore > a {
-  text-decoration: none;
-  color: mistyrose;
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }

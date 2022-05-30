@@ -1,9 +1,12 @@
+import React from 'react';
 import './App.css';
-import Footer from "./Components/FooterComponent"
+import NavBar from "../src/Components/Header";
 
 function App() {
   return (
-    <Footer />
+    <div className="App">
+      <NavBar/>
+    </div>
   );
 }
 
