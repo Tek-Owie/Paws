@@ -6,10 +6,10 @@ export default function NavBar ()
 {
     return (
         <nav className="navbar">
-            <div className="brand-name">
+            <div className="brandname">
                 Paws
             </div>
-            <ul className="nav-links">
+            <ul className="navlinks">
                 <li>         
                     <NavLink to="/">Home</NavLink>
                 </li>

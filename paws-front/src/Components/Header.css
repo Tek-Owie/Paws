@@ -5,34 +5,34 @@
     align-items: stretch;
 }
 
-.brand-name {
+.brandname {
     text-transform: uppercase;
     font-size: 3rem;
     letter-spacing: 2px;
 }
 
-.nav-links {
+.navlinks {
     display: flex;
     margin: 0;
     padding: 0;
     gap: 2rem;
 }
 
-.nav-links li {
+.navlinks li {
     list-style: none;
 }
 
-.nav-links a {
+.navlinks a {
     display: flex;
     height: 100%;
     align-items: center;
     text-decoration: none;
 }
 
-.nav-links a.active {
+.navlinks a.active {
     border-bottom: 2px solid hsl(180, 75%, 58%);
 }
 
-.nav-links li:hover {
+.navlinks li:hover {
     background: green;
 }
