@@ -1,4 +1,7 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css"
+import "font-awesome/css/font-awesome.min.css";
+import "bootstrap-social/bootstrap-social.css";
 import { BrowserRouter } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';

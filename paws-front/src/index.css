@@ -1,13 +1,10 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  height: 100%;
   font-family: 'Fira Sans Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
 }
 
 code {

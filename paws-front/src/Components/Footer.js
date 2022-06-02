@@ -1,83 +1,51 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import "./Footer.css";
+import { Link } from "react-router-dom";
 
-export default function Footer ()
-{
-    return (
-        <footer>
-            <div className="footer">
-                <div className="footer-brandname">
-                    <h1>
-                        paws
-                    </h1>
-                    <ul>
-                        <li>
-                            <Link to="/" >
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/about" >
-                                About
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/catalogue" >
-                                Catalogue
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/contact" >
-                                Contact
-                            </Link>
-                        </li>
+function Footer(props) {
+    return(
+    <div className="footer">
+        <div className="container">
+            <div className="row justify-content-center">             
+                <div className="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul className="list-unstyled">
+                        <li><Link to="/home">Home</Link></li>
+                        <li><Link to="/aboutus">About Us</Link></li>
+                        <li><Link to="/catalogue">Catalogue</Link></li>
+                        <li><Link to="/contactus">Contact Us</Link></li>
                     </ul>
                 </div>
-                <div className="contact">
-                    <ul>
-                        <li>
-                            <p>
-                                123 Ashton Drive, San Francisco
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                (1) 456 1227
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                44452144
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                info@paws.cute
-                            </p>
-                        </li>
-                    </ul>
+                <div className="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Clear Water Bay Road<br />
+		              Clear Water Bay, Kowloon<br />
+		              HONG KONG<br />
+		              <i className="fa fa-phone fa-lg" />: +852 1234 5678<br />
+		              <i className="fa fa-fax fa-lg" />: +852 8765 4321<br />
+		              <i className="fa fa-envelope fa-lg" />: <a href="mailto:confusion@food.net">
+                         confusion@food.net</a>
+                    </address>
                 </div>
-                <div className="socials">
-                    <ul>
-                        <li>
-                            <a href="https://instagram.com">
-                                Instagram
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://pinterest.com">
-                                Pinterest
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://facebook.com">
-                                Facebook
-                            </a>
-                        </li>
-                    </ul>
+                <div className="col-12 col-sm-4 align-self-center">
+                    <div className="text-center">
+                        <a className="btn btn-social-icon btn-google" href="http://google.com/+"><i className="fa fa-google-plus" /></a>
+                        <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i className="fa fa-facebook" /></a>
+                        <a className="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i className="fa fa-linkedin" /></a>
+                        <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter" /></a>
+                        <a className="btn btn-social-icon btn-google" href="http://youtube.com/"><i className="fa fa-youtube" /></a>
+                        <a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o" /></a>
+                    </div>
                 </div>
             </div>
-        </footer>
+            <div className="row justify-content-center">             
+                <div className="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+            </div>
+        </div>
+    </div>
     )
 }
+
+export default Footer;
