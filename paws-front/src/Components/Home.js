@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'reactstrap';
 
 export default class Home extends React.Component {
     render () {
@@ -14,9 +15,11 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <h1 styles={{margin: "1rem"}}>
-                    Meet the superstars of the month!
-                </h1>
+                <Container>
+                    <h1 styles={{margin: "1rem"}}>
+                        Meet the superstars of the month!
+                    </h1>
+                </Container>
             </>
         )
     }

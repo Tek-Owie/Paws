@@ -29,7 +29,6 @@
 }
 
 .footer a {
-  text-decoration: none;
   color: #ffff;
 }
 
@@ -41,7 +40,6 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  color:floralwhite;
 }
 
 address{
@@ -52,4 +50,15 @@ address{
 
 .navbar-dark {
   background-color: hsl(350, 68%, 78%);
+}
+
+.breadcrumb {
+  padding: .5rem;
+  width: fit-content;
+  border-radius: .25rem;
+  background-color: hsl(350, 68%, 78%);
+}
+
+.card-body {
+  text-align: center;
 }
